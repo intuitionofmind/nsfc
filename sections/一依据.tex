@@ -7,6 +7,7 @@
 
 \textbf{只需要修改`sections`,`figures`,`ref.bib`，那么如果模版更新，只需要拷贝这三项过去直接编译，就是最新版。}
 
+\begin{refsection}
 \section{自定义设置方法}
 【常规】自定义设置方法
 
@@ -215,10 +216,13 @@ $$
 降低了这种情况发生的可能。
 如果还有，就只好添加\verb|\newpage|把它newpage到后一页上，就行了。也可以考虑分段缓解，需要写的时候注意页面的分段和字数。
 
-\begin{REF}
-\subsection*{参考文献}
-\vspace{-50pt}
-\bibliography{ref}%参考文献
-\end{REF}
+%\begin{REF}
+%\subsection*{参考文献}
+%\vspace{-50pt}
+%\bibliography{ref}%参考文献
+%\end{REF}
+
+%使用biblatex
+\end{refsection}
 
 \newpage%自己判断是否需要

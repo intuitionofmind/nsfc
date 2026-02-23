@@ -2,6 +2,7 @@
 \documentclass[UTF8, punct, oneside, fontset=none]{ctexbook}
 \usepackage[windows]{nsfc}
 %【注意】在sections/个性化设置.sty中，设置修改选项。
+\usepackage{xcolor}
 
 \pagestyle{empty} % 第二页以后页码空白
 \usepackage[a4paper, left = 3.00cm, right = 3.00cm, top = 2.70cm, bottom = 2.56cm]{geometry}
@@ -13,12 +14,12 @@
     urlcolor=NSFblue,
     citecolor=NSFblue,
     }
-
 \usepackage{times}
-
 \usepackage{setspace}
-
 \usepackage{comment}
+
+\setCJKfamilyfont{kai}{Kaiti SC}
+\newcommand{\kaishu}{\CJKfamily{kai}}
 
 \graphicspath{{figures/}}   % 设置图片所存放的目录
 \begin{document}

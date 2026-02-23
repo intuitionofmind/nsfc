@@ -7,8 +7,6 @@
 \newif\ifMS@song
 \MS@kaitrue%默认正文楷体
 
-
-
 %选项选择：on输出正文MS文字；off不输出正文MS文字
 \newif\ifMS@on
 \newif\ifMS@off
@@ -32,8 +30,8 @@
 %【1】标题颜色
 \definecolor{HighLight}{RGB}{0,0,0}
 %【2】正文字体设置
-\global\MS@kaitrue\global\MS@songfalse%楷体正文
-%\global\MS@kaifalse\global\MS@songtrue%宋体正文
+%\global\MS@kaitrue\global\MS@songfalse%楷体正文
+\global\MS@kaifalse\global\MS@songtrue%宋体正文
 %【3】是否屏蔽正文
 \global\MS@offtrue\global\MS@onfalse%屏蔽正文
 %\global\MS@ontrue\global\MS@offfalse%不屏蔽正文
@@ -459,18 +457,18 @@ AutoFakeBold=3,
 \newcommand{\highlight}[1]{
 	\textcolor{HighLight}{{\bfseries#1}}}
 
-\usepackage[square,numbers,sort&compress]{natbib}%数字引用[1]
-\bibliographystyle{bibs/gbt7714-numerical}
+%\usepackage[square,numbers,sort&compress]{natbib}%数字引用[1]
+%\bibliographystyle{bibs/gbt7714-numerical}
 %\usepackage[round,sort]{natbib}%作者年引用Author(2022)
 %\bibliographystyle{bibs/gbt7714-author-year}
 %bst定制方法：修改对应.bst文件的FUNCTION {load.config}部分设置
 
 \newcommand{\citess}[1]{\textsuperscript{\cite{#1}}}%上标引用
 
-\setlength{\bibsep}{5pt plus 0.3ex}%bib条目间距
-\renewcommand\bibsection{\section*{%
-	{\MSzh\ensong\fontsize{12pt}{22pt}\selectfont%
-	\setlength{\baselineskip}{20pt}}}}%参考文献}}}
+%\setlength{\bibsep}{5pt plus 0.3ex}%bib条目间距
+%\renewcommand\bibsection{\section*{%
+%	{\MSzh\ensong\fontsize{12pt}{22pt}\selectfont%
+%	\setlength{\baselineskip}{20pt}}}}%参考文献}}}
 \newenvironment{REF}%
 	{\begingroup
 	\MSzh\ensong\fontsize{12pt}{22pt}\selectfont
